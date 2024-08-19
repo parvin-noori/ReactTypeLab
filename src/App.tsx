@@ -7,7 +7,7 @@ function App() {
     <>
  <Input id="title" placeholder="title" type="text"/>
  <Input id="price" placeholder="price" type="number"/>
- <Button element="anchor" href=""></Button>
+ <Button  href=""></Button>
     </>
   )
 }
