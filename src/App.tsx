@@ -1,8 +1,12 @@
+import Input from "./components/Input"
 
 function App() {
 
   return (
-   <>app</>
+    <>
+ <Input id="title" placeholder="title" type="text"/>
+ <Input id="price" placeholder="price" type="number"/>
+    </>
   )
 }
 
