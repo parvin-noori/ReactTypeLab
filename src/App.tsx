@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
- <Container componentType={Button}/>
+ <Container componentType={Button}>add product</Container>
     </>
   )
 }
