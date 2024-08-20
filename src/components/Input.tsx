@@ -1,14 +1,18 @@
-import {type ComponentPropsWithoutRef } from "react"
+import {forwardRef, type ComponentPropsWithoutRef } from "react"
 
 type InputProps={
     id:string
     placeholder:string
 } & ComponentPropsWithoutRef<'input'>
 
-export default function Input({id,placeholder,...props}:InputProps) {
-  return (
-    <p>
-        <input id={id} placeholder={placeholder} {...props}/>
-    </p>
-  )
-}
+const Input=forwardRef<HTMLInputElement,InputProps>(
+  function Input({id,placeholder,...props},ref) {
+    return (
+      <p>
+          <input id={id} placeholder={placeholder} {...props} ref={ref}/>
+      </p>
+    )
+  }
+)
+
+export default Input 
