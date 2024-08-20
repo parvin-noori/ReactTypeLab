@@ -1,11 +1,11 @@
-import { Component } from "react"
 import Button from "./components/Button"
+import Container from "./components/Container"
 
 function App() {
 
   return (
     <>
- <Component componentType={Button}/>
+ <Container componentType={Button}/>
     </>
   )
 }
